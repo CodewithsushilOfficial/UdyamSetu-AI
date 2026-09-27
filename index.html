@@ -1,0 +1,1539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="UdyamSetu AI - From Business Idea to Financing Readiness. Hyper-local business advisory and financial structuring for rural entrepreneurs.">
+  <title>UdyamSetu AI — From Business Idea to Financing Readiness</title>
+  
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Mobile Header Bar (Visible on <768px) -->
+  <header class="mobile-navbar" id="mobileNavbar">
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+      <i data-lucide="menu"></i>
+    </button>
+    <div class="logo-group">
+      <div class="logo-mark">
+        <span class="logo-text-main">UdyamSetu</span><span class="logo-text-ai">AI</span>
+        <span class="logo-leaf">🌱</span>
+      </div>
+    </div>
+    <div class="mobile-nav-actions">
+      <button class="icon-btn" id="mobileNotifyBtn" aria-label="Notifications">
+        <i data-lucide="bell"></i>
+        <span class="badge-dot">3</span>
+      </button>
+      <button class="mobile-avatar-btn" id="mobileProfileBtn" aria-label="Profile">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&auto=format&fit=crop&q=80" alt="Ramesh Yadav" class="avatar-img-sm" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'32\' height=\'32\' viewBox=\'0 0 32 32\'><circle cx=\'16\' cy=\'16\' r=\'16\' fill=\'%23087F4E\'/><text x=\'50%25\' y=\'55%25\' text-anchor=\'middle\' fill=\'white\' font-size=\'14\' font-family=\'sans-serif\' dy=\'.3em\'>RY</text></svg>'">
+      </button>
+    </div>
+  </header>
+
+  <!-- App Layout Container -->
+  <div class="app-layout">
+    
+    <!-- ========================================== -->
+    <!-- 1. LEFT SIDEBAR NAVIGATION                 -->
+    <!-- ========================================== -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="brand-logo" role="banner">
+          <div class="logo-mark-wrap">
+            <div class="logo-icon-svg">
+              <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="32" height="32" rx="8" fill="#E8F7EF"/>
+                <path d="M16 6C10.4772 6 6 10.4772 6 16C6 21.5228 10.4772 26 16 26C21.5228 26 26 21.5228 26 16C26 10.4772 21.5228 6 16 6Z" fill="#087F4E" fill-opacity="0.12"/>
+                <path d="M11 20C11 15 15 11 21 10C21 16 17 21 11 20Z" fill="#087F4E"/>
+                <path d="M13 19C15.5 15.5 18 13.5 21 10" stroke="#E8F7EF" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="logo-text-block">
+              <div class="brand-title">
+                <span class="brand-udyam">UdyamSetu</span><span class="brand-ai">AI</span>
+                <span class="brand-leaf-icon">🌱</span>
+              </div>
+              <span class="brand-tagline">From Business Idea to Financing Readiness</span>
+            </div>
+          </div>
+        </div>
+        <button class="sidebar-close-btn" id="sidebarCloseBtn" aria-label="Close sidebar">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="sidebar-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#dashboard" class="nav-link active" data-nav="dashboard">
+              <i data-lucide="home" class="nav-icon"></i>
+              <span class="nav-label">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#profile" class="nav-link" data-nav="profile">
+              <i data-lucide="user" class="nav-icon"></i>
+              <span class="nav-label">My Profile</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#ideas" class="nav-link" data-nav="ideas">
+              <i data-lucide="lightbulb" class="nav-icon"></i>
+              <span class="nav-label">Business Ideas</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#market" class="nav-link" data-nav="market">
+              <i data-lucide="trending-up" class="nav-icon"></i>
+              <span class="nav-label">Market Analysis</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#calculator" class="nav-link" data-nav="calculator">
+              <i data-lucide="calculator" class="nav-icon"></i>
+              <span class="nav-label">Financial Calculator</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#schemes" class="nav-link" data-nav="schemes">
+              <i data-lucide="landmark" class="nav-icon"></i>
+              <span class="nav-label">Govt. Schemes</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#advisor" class="nav-link" data-nav="advisor">
+              <i data-lucide="sparkles" class="nav-icon purple-icon"></i>
+              <span class="nav-label">AI Business Advisor</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#reports" class="nav-link" data-nav="reports">
+              <i data-lucide="file-text" class="nav-icon"></i>
+              <span class="nav-label">Reports</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#applications" class="nav-link" data-nav="applications">
+              <i data-lucide="folder-check" class="nav-icon"></i>
+              <span class="nav-label">My Applications</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#notifications" class="nav-link" data-nav="notifications">
+              <i data-lucide="bell" class="nav-icon"></i>
+              <span class="nav-label">Notifications</span>
+              <span class="nav-counter">3</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#settings" class="nav-link" data-nav="settings">
+              <i data-lucide="settings" class="nav-icon"></i>
+              <span class="nav-label">Settings</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Sidebar Bottom Support Card -->
+      <div class="sidebar-footer">
+        <div class="support-card">
+          <div class="support-avatar-wrap">
+            <div class="support-avatar-circle">
+              <svg width="40" height="40" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="24" fill="#E8F7EF"/>
+                <circle cx="24" cy="18" r="8" fill="#1D4ED8"/>
+                <path d="M12 38C12 31.3726 17.3726 26 24 26C30.6274 26 36 31.3726 36 38" fill="#1D4ED8"/>
+                <circle cx="34" cy="19" r="3" fill="#087F4E"/>
+                <path d="M31 22C31 24 28 25 26 25" stroke="#087F4E" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <span class="support-leaf-badge">🌱</span>
+          </div>
+          <div class="support-content">
+            <h4 class="support-title">Need Help?</h4>
+            <p class="support-desc">Talk to our support team</p>
+            <button class="btn btn-support" id="contactSupportBtn">Contact Support</button>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Overlay backdrop for mobile drawer -->
+    <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
+    <!-- ========================================== -->
+    <!-- 2. MAIN CENTER CONTENT AREA                -->
+    <!-- ========================================== -->
+    <main class="main-content" id="mainContent">
+      
+      <!-- Top Application Header -->
+      <header class="top-header">
+        <div class="header-search-wrapper">
+          <i data-lucide="search" class="search-icon"></i>
+          <input 
+            type="search" 
+            id="globalSearchInput" 
+            class="header-search-input" 
+            placeholder="Search business ideas, schemes, or ask anything..."
+            aria-label="Search business ideas, schemes, or ask anything"
+            autocomplete="off"
+          />
+          <div class="search-autocomplete-dropdown" id="searchAutocomplete"></div>
+        </div>
+
+        <div class="header-right-tools">
+          <!-- Location Selector Chip -->
+          <button class="header-location-chip" id="locationSelectBtn" title="Change Location">
+            <i data-lucide="map-pin" class="location-pin-icon"></i>
+            <span class="location-text" id="headerLocationText">Sadar, Varanasi, UP</span>
+          </button>
+
+          <!-- Notification Bell -->
+          <div class="header-notify-wrapper">
+            <button class="icon-btn header-bell-btn" id="notifyBellBtn" aria-label="Notifications, 3 unread">
+              <i data-lucide="bell"></i>
+              <span class="notify-badge">3</span>
+            </button>
+            <div class="notify-popup" id="notifyPopup">
+              <div class="notify-popup-header">
+                <h3>Notifications</h3>
+                <span class="badge-count">3 New</span>
+              </div>
+              <ul class="notify-popup-list">
+                <li class="notify-popup-item unread">
+                  <div class="notify-dot"></div>
+                  <div class="notify-info">
+                    <p class="notify-msg"><strong>PMEGP Subsidy rate updated</strong> for rural micro enterprises in Varanasi district.</p>
+                    <span class="notify-time">1 hour ago</span>
+                  </div>
+                </li>
+                <li class="notify-popup-item unread">
+                  <div class="notify-dot"></div>
+                  <div class="notify-info">
+                    <p class="notify-msg">Your <strong>Dairy Farming Feasibility Report</strong> is ready to download.</p>
+                    <span class="notify-time">3 hours ago</span>
+                  </div>
+                </li>
+                <li class="notify-popup-item">
+                  <div class="notify-dot read"></div>
+                  <div class="notify-info">
+                    <p class="notify-msg">New dairy chilling center opening 3.8 km from Sadar block.</p>
+                    <span class="notify-time">Yesterday</span>
+                  </div>
+                </li>
+              </ul>
+              <div class="notify-popup-footer">
+                <button class="btn-link" id="markAllReadBtn">Mark all as read</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Language Selector Dropdown -->
+          <div class="dropdown-wrapper language-dropdown-wrapper">
+            <button class="header-lang-btn" id="languageBtn" aria-expanded="false" aria-haspopup="true">
+              <span class="lang-text" id="currentLangLabel">English</span>
+              <i data-lucide="chevron-down" class="dropdown-arrow-icon"></i>
+            </button>
+            <div class="dropdown-menu lang-menu" id="langMenu">
+              <a href="#" class="dropdown-item active" data-lang="en">
+                <span>English</span>
+                <i data-lucide="check" class="check-icon"></i>
+              </a>
+              <a href="#" class="dropdown-item" data-lang="hi">
+                <span>हिन्दी (Hindi)</span>
+              </a>
+              <a href="#" class="dropdown-item" data-lang="bho">
+                <span>भोजपुरी (Bhojpuri)</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- User Profile -->
+          <div class="dropdown-wrapper user-dropdown-wrapper">
+            <button class="header-user-btn" id="userMenuBtn" aria-expanded="false" aria-haspopup="true">
+              <div class="avatar-wrap">
+                <img 
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&auto=format&fit=crop&q=80" 
+                  alt="Ramesh Yadav" 
+                  class="user-avatar"
+                  onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'36\' height=\'36\' viewBox=\'0 0 36 36\'><circle cx=\'18\' cy=\'18\' r=\'18\' fill=\'%23087F4E\'/><text x=\'50%25\' y=\'55%25\' text-anchor=\'middle\' fill=\'white\' font-size=\'14\' font-family=\'sans-serif\' dy=\'.3em\'>RY</text></svg>'"
+                >
+              </div>
+              <div class="user-meta">
+                <span class="user-name">Ramesh Yadav</span>
+                <span class="user-role">Rural Entrepreneur</span>
+              </div>
+              <i data-lucide="chevron-down" class="dropdown-arrow-icon"></i>
+            </button>
+            <div class="dropdown-menu user-menu" id="userMenu">
+              <div class="user-menu-header">
+                <strong>Ramesh Yadav</strong>
+                <span>ramesh.yadav@udyamsetu.in</span>
+              </div>
+              <div class="menu-divider"></div>
+              <a href="#profile" class="dropdown-item"><i data-lucide="user"></i> My Profile</a>
+              <a href="#applications" class="dropdown-item"><i data-lucide="file-check"></i> Applications (2 active)</a>
+              <a href="#settings" class="dropdown-item"><i data-lucide="settings"></i> Account Settings</a>
+              <div class="menu-divider"></div>
+              <a href="#logout" class="dropdown-item text-danger" id="logoutItem"><i data-lucide="log-out"></i> Log Out</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Dashboard Scrollable Body -->
+      <div class="dashboard-scrollable-container">
+
+        <!-- ========================================== -->
+        <!-- 3. HERO / WELCOME SECTION                  -->
+        <!-- ========================================== -->
+        <section class="hero-section" aria-label="Welcome Banner">
+          <div class="hero-card">
+            <!-- Background Image with Overlay -->
+            <div class="hero-bg-wrapper">
+              <img 
+                src="https://images.unsplash.com/photo-1544717302-de2939b7ef71?auto=format&fit=crop&w=1600&q=80" 
+                alt="Indian rural farmer in lush agricultural field with smartphone" 
+                class="hero-bg-img"
+                onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg, #05663F 0%, #087F4E 60%, #15803D 100%)';"
+              />
+              <div class="hero-overlay"></div>
+            </div>
+
+            <div class="hero-inner-content">
+              <!-- Left Welcome Pitch -->
+              <div class="hero-text-col">
+                <span class="hero-kicker">Welcome Back,</span>
+                <h1 class="hero-heading">Ramesh Yadav <span class="hero-leaf">🌱</span></h1>
+                <p class="hero-description">
+                  Turn your idea into a successful business with the right analysis, financing options and government support.
+                </p>
+                <div class="hero-actions">
+                  <button class="btn btn-hero-primary" id="heroExploreIdeasBtn">
+                    <span>Explore Business Ideas</span>
+                    <i data-lucide="arrow-right"></i>
+                  </button>
+                  <button class="btn btn-hero-secondary" id="heroGenerateReportBtn">
+                    <i data-lucide="file-text"></i>
+                    <span>Generate Report</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Right Quote Card Floating Banner -->
+              <div class="hero-quote-col">
+                <div class="hero-quote-card">
+                  <div class="quote-leaf-badge">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" fill="#087F4E" fill-opacity="0.15"/>
+                      <path d="M7 16C7 11 11 7 17 6C17 12 13 17 7 16Z" fill="#087F4E"/>
+                      <path d="M9 15C11.5 11.5 14 9.5 17 6" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                  <blockquote class="quote-text">
+                    “Sahi Jaankari,<br>
+                    Sahi Yojana,<br>
+                    Sahi Nirnay,<br>
+                    <strong>Samriddh Kal.</strong>”
+                  </blockquote>
+                  <span class="quote-sub">— UdyamSetu Mission</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- 4. 4 KPI CARDS ROW                         -->
+        <!-- ========================================== -->
+        <section class="kpi-grid" aria-label="Key Performance Indicators">
+          
+          <!-- KPI 1 -->
+          <div class="kpi-card card">
+            <div class="kpi-icon-wrap bg-orange-soft text-orange">
+              <i data-lucide="lightbulb"></i>
+            </div>
+            <div class="kpi-body">
+              <span class="kpi-title">Business Ideas Explored</span>
+              <div class="kpi-value-row">
+                <span class="kpi-value" id="kpiIdeasCount">12</span>
+              </div>
+              <span class="kpi-footer text-success">
+                <i data-lucide="trending-up" class="inline-icon"></i> +3 this month
+              </span>
+            </div>
+          </div>
+
+          <!-- KPI 2 -->
+          <div class="kpi-card card">
+            <div class="kpi-icon-wrap bg-blue-soft text-blue">
+              <i data-lucide="file-text"></i>
+            </div>
+            <div class="kpi-body">
+              <span class="kpi-title">Reports Generated</span>
+              <div class="kpi-value-row">
+                <span class="kpi-value" id="kpiReportsCount">4</span>
+              </div>
+              <span class="kpi-footer text-success">
+                <i data-lucide="trending-up" class="inline-icon"></i> +1 this month
+              </span>
+            </div>
+          </div>
+
+          <!-- KPI 3 -->
+          <div class="kpi-card card">
+            <div class="kpi-icon-wrap bg-green-soft text-green">
+              <i data-lucide="indian-rupee"></i>
+            </div>
+            <div class="kpi-body">
+              <span class="kpi-title">Eligible Loan Amount</span>
+              <div class="kpi-value-row">
+                <span class="kpi-value" id="kpiLoanAmount">₹ 9,00,000</span>
+              </div>
+              <span class="kpi-footer text-muted">
+                Based on your profile
+              </span>
+            </div>
+          </div>
+
+          <!-- KPI 4 -->
+          <div class="kpi-card card clickable-card" id="kpiSchemesCard" role="button" tabindex="0">
+            <div class="kpi-icon-wrap bg-red-soft text-red">
+              <i data-lucide="bookmark"></i>
+            </div>
+            <div class="kpi-body">
+              <span class="kpi-title">Applicable Schemes</span>
+              <div class="kpi-value-row">
+                <span class="kpi-value" id="kpiSchemesCount">5</span>
+              </div>
+              <span class="kpi-footer text-primary link-footer">
+                View schemes <i data-lucide="arrow-right" class="inline-icon"></i>
+              </span>
+            </div>
+          </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- 5. TWO-COLUMN BALANCED SUB-GRID            -->
+        <!-- ========================================== -->
+        <div class="content-dual-col-grid">
+          
+          <!-- ---------------------------------------- -->
+          <!-- LEFT SUB-COLUMN                          -->
+          <!-- ---------------------------------------- -->
+          <div class="col-stack">
+            
+            <!-- CARD A: YOUR LOCATION INTELLIGENCE -->
+            <div class="card location-card">
+              <div class="card-header">
+                <div class="card-title-group">
+                  <div class="title-with-icon">
+                    <i data-lucide="map-pin" class="section-header-icon text-green"></i>
+                    <h2 class="card-title">Your Location</h2>
+                  </div>
+                  <span class="card-subtitle" id="locationCardSubtitle">Sadar, Varanasi, Uttar Pradesh</span>
+                </div>
+                <button class="btn btn-outline-sm" id="editLocationBtn">
+                  <i data-lucide="pencil" class="inline-icon-sm"></i>
+                  <span>Edit Location</span>
+                </button>
+              </div>
+
+              <div class="card-body">
+                <!-- SVG / CSS Mock Map Container -->
+                <div class="map-container" id="mapContainer">
+                  <div class="map-canvas-wrap">
+                    <!-- Stylized SVG Map of Varanasi / Sadar Cluster -->
+                    <svg viewBox="0 0 440 230" class="styled-svg-map" aria-label="Location intelligence map showing Sadar and 5km radius">
+                      <defs>
+                        <!-- Grid pattern for terrain -->
+                        <pattern id="mapGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+                          <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#E2E8F0" stroke-width="0.7" opacity="0.6"/>
+                        </pattern>
+                        <!-- River Ganga Gradient -->
+                        <linearGradient id="riverGanga" x1="0%" y1="0%" x2="100%" y2="100%">
+                          <stop offset="0%" stop-color="#BAE6FD"/>
+                          <stop offset="100%" stop-color="#7DD3FC"/>
+                        </linearGradient>
+                        <radialGradient id="radiusGlow" cx="50%" cy="50%" r="50%">
+                          <stop offset="0%" stop-color="#0284C7" stop-opacity="0.12"/>
+                          <stop offset="70%" stop-color="#0284C7" stop-opacity="0.04"/>
+                          <stop offset="100%" stop-color="#0284C7" stop-opacity="0"/>
+                        </radialGradient>
+                      </defs>
+
+                      <!-- Background Terrain -->
+                      <rect width="440" height="230" fill="#F8FAFC"/>
+                      <rect width="440" height="230" fill="url(#mapGrid)"/>
+
+                      <!-- River Ganga (Characteristic curved path through Varanasi) -->
+                      <path d="M 330 0 C 310 50, 315 110, 360 160 C 385 190, 420 210, 440 230 L 440 0 Z" fill="url(#riverGanga)" opacity="0.45"/>
+                      <path d="M 330 0 C 310 50, 315 110, 360 160 C 385 190, 420 210, 440 230" fill="none" stroke="#38BDF8" stroke-width="2.5" opacity="0.7"/>
+
+                      <!-- Highways & Rural Arterial Roads -->
+                      <path d="M 20 80 Q 150 90 230 130 T 420 180" fill="none" stroke="#CBD5E1" stroke-width="4.5" stroke-linecap="round"/>
+                      <path d="M 20 80 Q 150 90 230 130 T 420 180" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+
+                      <path d="M 120 10 Q 160 80 180 140 T 210 225" fill="none" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round"/>
+                      <path d="M 120 10 Q 160 80 180 140 T 210 225" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+
+                      <path d="M 70 210 Q 160 160 270 120 T 380 70" fill="none" stroke="#CBD5E1" stroke-width="3" stroke-linecap="round"/>
+
+                      <!-- 5 km Radius Dotted Circle around Sadar (cx=175, cy=130) -->
+                      <circle cx="175" cy="130" r="76" fill="url(#radiusGlow)"/>
+                      <circle cx="175" cy="130" r="76" fill="none" stroke="#0284C7" stroke-width="1.8" stroke-dasharray="4 3"/>
+
+                      <!-- Town / Area Names -->
+                      <text x="35" y="45" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#475569">Cholapur</text>
+                      <circle cx="28" cy="42" r="3" fill="#94A3B8"/>
+
+                      <text x="325" y="48" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#475569">Harahua</text>
+                      <circle cx="318" cy="45" r="3" fill="#94A3B8"/>
+
+                      <text x="295" y="215" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#475569">Ramnagar</text>
+                      <circle cx="288" cy="212" r="3" fill="#94A3B8"/>
+
+                      <text x="145" y="195" font-family="'Plus Jakarta Sans', sans-serif" font-size="15" font-weight="700" fill="#1E293B">Varanasi</text>
+
+                      <!-- Markers: Nearby Markets (Green) -->
+                      <g class="map-marker-item" transform="translate(195, 75)" cursor="pointer">
+                        <circle cx="0" cy="0" r="7" fill="#10B981" fill-opacity="0.2"/>
+                        <circle cx="0" cy="0" r="4.5" fill="#10B981"/>
+                        <title>Nearby Mandi / Market (Harahua Road)</title>
+                      </g>
+
+                      <g class="map-marker-item" transform="translate(100, 155)" cursor="pointer">
+                        <circle cx="0" cy="0" r="7" fill="#10B981" fill-opacity="0.2"/>
+                        <circle cx="0" cy="0" r="4.5" fill="#10B981"/>
+                        <title>Krishi Upaj Mandi</title>
+                      </g>
+
+                      <!-- Competitors (Red) -->
+                      <g class="map-marker-item" transform="translate(118, 120)" cursor="pointer">
+                        <circle cx="0" cy="0" r="6" fill="#EF4444" fill-opacity="0.2"/>
+                        <circle cx="0" cy="0" r="4" fill="#EF4444"/>
+                        <title>Existing Dairy Supplier Unit</title>
+                      </g>
+
+                      <g class="map-marker-item" transform="translate(265, 115)" cursor="pointer">
+                        <circle cx="0" cy="0" r="6" fill="#EF4444" fill-opacity="0.2"/>
+                        <circle cx="0" cy="0" r="4" fill="#EF4444"/>
+                        <title>Commercial Dairy Farm</title>
+                      </g>
+
+                      <!-- Potential Demand (Orange) -->
+                      <g class="map-marker-item" transform="translate(230, 95)" cursor="pointer">
+                        <circle cx="0" cy="0" r="7" fill="#F59E0B" fill-opacity="0.2"/>
+                        <circle cx="0" cy="0" r="4.5" fill="#F59E0B"/>
+                        <title>High Organic Milk & Veggie Demand Cluster</title>
+                      </g>
+
+                      <g class="map-marker-item" transform="translate(160, 80)" cursor="pointer">
+                        <circle cx="0" cy="0" r="7" fill="#F59E0B" fill-opacity="0.2"/>
+                        <circle cx="0" cy="0" r="4.5" fill="#F59E0B"/>
+                        <title>Hotels & Sweet shops wholesale buyer cluster</title>
+                      </g>
+
+                      <!-- Center Pin: Your Location (Sadar) -->
+                      <g transform="translate(175, 130)">
+                        <circle cx="0" cy="0" r="14" fill="#2563EB" fill-opacity="0.18">
+                          <animate attributeName="r" values="12;18;12" dur="3s" repeatCount="indefinite"/>
+                          <animate attributeName="opacity" values="0.6;0.2;0.6" dur="3s" repeatCount="indefinite"/>
+                        </circle>
+                        <!-- Blue Pin SVG -->
+                        <path d="M 0 -18 C -7 -18 -12 -13 -12 -6 C -12 4 0 16 0 16 C 0 16 12 4 12 -6 C 12 -13 7 -18 0 -18 Z" fill="#2563EB" stroke="#FFFFFF" stroke-width="1.8"/>
+                        <circle cx="0" cy="-7" r="4" fill="#FFFFFF"/>
+                        <!-- Label "Sadar" -->
+                        <rect x="-24" y="-34" width="48" height="15" rx="3" fill="#1E293B"/>
+                        <text x="0" y="-23" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9.5" font-weight="700" fill="#FFFFFF">Sadar</text>
+                      </g>
+
+                      <!-- Distance Scale Indicator -->
+                      <g transform="translate(15, 212)">
+                        <line x1="0" y1="0" x2="35" y2="0" stroke="#64748B" stroke-width="2"/>
+                        <line x1="0" y1="-3" x2="0" y2="3" stroke="#64748B" stroke-width="2"/>
+                        <line x1="35" y1="-3" x2="35" y2="3" stroke="#64748B" stroke-width="2"/>
+                        <text x="18" y="-4" text-anchor="middle" font-family="'Inter', sans-serif" font-size="8.5" fill="#64748B">5 km</text>
+                      </g>
+                    </svg>
+
+                    <!-- Interactive Floating Map Tooltip -->
+                    <div class="map-tooltip" id="mapTooltip">Hover over markers for details</div>
+                  </div>
+
+                  <!-- Map Legend on Right -->
+                  <div class="map-legend">
+                    <div class="legend-row">
+                      <span class="legend-symbol pin-blue"></span>
+                      <span class="legend-text">Your Location</span>
+                    </div>
+                    <div class="legend-row">
+                      <span class="legend-symbol circle-radius"></span>
+                      <span class="legend-text">5 km Radius</span>
+                    </div>
+                    <div class="legend-row">
+                      <span class="legend-symbol dot-green"></span>
+                      <span class="legend-text">Nearby Markets</span>
+                    </div>
+                    <div class="legend-row">
+                      <span class="legend-symbol dot-red"></span>
+                      <span class="legend-text">Competitors</span>
+                    </div>
+                    <div class="legend-row">
+                      <span class="legend-symbol dot-orange"></span>
+                      <span class="legend-text">Potential Demand</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD B: MARKET OVERVIEW (5 KM RADIUS) -->
+            <div class="card market-overview-card">
+              <div class="card-header">
+                <div class="card-title-group">
+                  <div class="title-with-icon">
+                    <i data-lucide="bar-chart-2" class="section-header-icon text-green"></i>
+                    <h2 class="card-title">Market Overview</h2>
+                    <span class="badge-sub-title">(5 km Radius)</span>
+                  </div>
+                </div>
+                <!-- Commodity Selector Dropdown -->
+                <div class="commodity-select-wrapper">
+                  <select id="commoditySelect" class="form-select-sm" aria-label="Select commodity for market analysis">
+                    <option value="tomato" selected>Tomato</option>
+                    <option value="milk">Cow Milk</option>
+                    <option value="potato">Potato</option>
+                    <option value="mustard">Mustard Oil</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <!-- 3 Metric Summary Pill Cards -->
+                <div class="market-metrics-row">
+                  <div class="market-pill-card pill-coral">
+                    <div class="pill-icon-wrap text-red">
+                      <i data-lucide="tag"></i>
+                    </div>
+                    <div class="pill-data">
+                      <span class="pill-value" id="marketAvgPrice">₹ 18/kg</span>
+                      <span class="pill-label">Avg. Market Price</span>
+                    </div>
+                  </div>
+
+                  <div class="market-pill-card pill-green">
+                    <div class="pill-icon-wrap text-green">
+                      <i data-lucide="trending-up"></i>
+                    </div>
+                    <div class="pill-data">
+                      <span class="pill-value text-green" id="marketDemandLevel">High</span>
+                      <span class="pill-label">Market Demand</span>
+                    </div>
+                  </div>
+
+                  <div class="market-pill-card pill-blue">
+                    <div class="pill-icon-wrap text-blue">
+                      <i data-lucide="users"></i>
+                    </div>
+                    <div class="pill-data">
+                      <span class="pill-value text-blue" id="marketCompetitionLevel">Low</span>
+                      <span class="pill-label">Competition</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Price Trend Line Chart (SVG) -->
+                <div class="market-chart-container">
+                  <div class="chart-header-row">
+                    <span class="chart-caption">Monthly Wholesale Rate Trend (₹/kg)</span>
+                    <span class="chart-badge text-success"><i data-lucide="arrow-up-right"></i> +38% since Jan</span>
+                  </div>
+                  <div class="svg-chart-wrapper">
+                    <svg viewBox="0 0 460 130" class="market-trend-svg" id="marketTrendSvg">
+                      <defs>
+                        <linearGradient id="chartGradient" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="0%" stop-color="#087F4E" stop-opacity="0.22"/>
+                          <stop offset="100%" stop-color="#087F4E" stop-opacity="0.01"/>
+                        </linearGradient>
+                      </defs>
+
+                      <!-- Grid Lines Y: 0, 10, 20, 30 -->
+                      <g class="chart-grid">
+                        <line x1="35" y1="15" x2="445" y2="15" stroke="#F1F5F9" stroke-width="1"/>
+                        <text x="25" y="19" text-anchor="end" class="chart-axis-text">30</text>
+
+                        <line x1="35" y1="48" x2="445" y2="48" stroke="#F1F5F9" stroke-width="1"/>
+                        <text x="25" y="52" text-anchor="end" class="chart-axis-text">20</text>
+
+                        <line x1="35" y1="81" x2="445" y2="81" stroke="#F1F5F9" stroke-width="1"/>
+                        <text x="25" y="85" text-anchor="end" class="chart-axis-text">10</text>
+
+                        <line x1="35" y1="105" x2="445" y2="105" stroke="#E2E8F0" stroke-width="1"/>
+                        <text x="25" y="108" text-anchor="end" class="chart-axis-text">0</text>
+                      </g>
+
+                      <!-- Area fill under line -->
+                      <!-- Points mapped to SVG: 15->64.5, 17->57.9, 20->48, 18->54.6, 20->48, 23->38.1, 25->31.5, 27->24.9 -->
+                      <path id="chartAreaPath" d="M 50 64.5 L 105 57.9 L 160 48 L 215 54.6 L 270 48 L 325 38.1 L 380 31.5 L 435 24.9 L 435 105 L 50 105 Z" fill="url(#chartGradient)"/>
+
+                      <!-- Stroke Line -->
+                      <path id="chartLinePath" d="M 50 64.5 L 105 57.9 L 160 48 L 215 54.6 L 270 48 L 325 38.1 L 380 31.5 L 435 24.9" fill="none" stroke="#087F4E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+                      <!-- Data Points -->
+                      <g id="chartPointsGroup" class="chart-points">
+                        <circle cx="50" cy="64.5" r="4" fill="#087F4E" stroke="#FFFFFF" stroke-width="2" data-val="₹15" data-mo="Jan"/>
+                        <circle cx="105" cy="57.9" r="4" fill="#087F4E" stroke="#FFFFFF" stroke-width="2" data-val="₹17" data-mo="Feb"/>
+                        <circle cx="160" cy="48" r="4" fill="#087F4E" stroke="#FFFFFF" stroke-width="2" data-val="₹20" data-mo="Mar"/>
+                        <circle cx="215" cy="54.6" r="4" fill="#087F4E" stroke="#FFFFFF" stroke-width="2" data-val="₹18" data-mo="Apr"/>
+                        <circle cx="270" cy="48" r="4" fill="#087F4E" stroke="#FFFFFF" stroke-width="2" data-val="₹20" data-mo="May"/>
+                        <circle cx="325" cy="38.1" r="4" fill="#087F4E" stroke="#FFFFFF" stroke-width="2" data-val="₹23" data-mo="Jun"/>
+                        <circle cx="380" cy="31.5" r="4" fill="#087F4E" stroke="#FFFFFF" stroke-width="2" data-val="₹25" data-mo="Jul"/>
+                        <circle cx="435" cy="24.9" r="4" fill="#087F4E" stroke="#FFFFFF" stroke-width="2" data-val="₹27" data-mo="Aug"/>
+                      </g>
+
+                      <!-- X-Axis Labels -->
+                      <g class="chart-x-labels">
+                        <text x="50" y="122" text-anchor="middle" class="chart-axis-text">Jan</text>
+                        <text x="105" y="122" text-anchor="middle" class="chart-axis-text">Feb</text>
+                        <text x="160" y="122" text-anchor="middle" class="chart-axis-text">Mar</text>
+                        <text x="215" y="122" text-anchor="middle" class="chart-axis-text">Apr</text>
+                        <text x="270" y="122" text-anchor="middle" class="chart-axis-text">May</text>
+                        <text x="325" y="122" text-anchor="middle" class="chart-axis-text">Jun</text>
+                        <text x="380" y="122" text-anchor="middle" class="chart-axis-text">Jul</text>
+                        <text x="435" y="122" text-anchor="middle" class="chart-axis-text">Aug</text>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD C: RECENT ACTIVITY -->
+            <div class="card recent-activity-card">
+              <div class="card-header">
+                <div class="title-with-icon">
+                  <i data-lucide="clock" class="section-header-icon text-green"></i>
+                  <h2 class="card-title">Recent Activity</h2>
+                </div>
+                <a href="#all-activity" class="card-header-link" id="viewAllActivityBtn">
+                  <i data-lucide="arrow-right"></i>
+                </a>
+              </div>
+
+              <div class="card-body">
+                <ul class="activity-timeline-list" id="activityList">
+                  <li class="activity-item">
+                    <div class="activity-icon-badge bg-green-soft text-green">
+                      <i data-lucide="file-check"></i>
+                    </div>
+                    <div class="activity-content">
+                      <p class="activity-text">Generated feasibility report for <strong>Dairy Farming</strong></p>
+                      <span class="activity-timestamp">2 hours ago</span>
+                    </div>
+                  </li>
+                  <li class="activity-item">
+                    <div class="activity-icon-badge bg-purple-soft text-purple">
+                      <i data-lucide="lightbulb"></i>
+                    </div>
+                    <div class="activity-content">
+                      <p class="activity-text">Explored <strong>Vegetable Processing</strong> business idea</p>
+                      <span class="activity-timestamp">5 hours ago</span>
+                    </div>
+                  </li>
+                  <li class="activity-item">
+                    <div class="activity-icon-badge bg-orange-soft text-orange">
+                      <i data-lucide="landmark"></i>
+                    </div>
+                    <div class="activity-content">
+                      <p class="activity-text">Checked <strong>PMEGP</strong> scheme eligibility details</p>
+                      <span class="activity-timestamp">1 day ago</span>
+                    </div>
+                  </li>
+                  <li class="activity-item">
+                    <div class="activity-icon-badge bg-blue-soft text-blue">
+                      <i data-lucide="user-check"></i>
+                    </div>
+                    <div class="activity-content">
+                      <p class="activity-text">Updated your profile information & land record details</p>
+                      <span class="activity-timestamp">2 days ago</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div><!-- END LEFT SUB-COLUMN -->
+
+          <!-- ---------------------------------------- -->
+          <!-- RIGHT SUB-COLUMN                         -->
+          <!-- ---------------------------------------- -->
+          <div class="col-stack">
+            
+            <!-- CARD D: RECOMMENDED BUSINESS IDEAS -->
+            <div class="card business-ideas-section-card">
+              <div class="card-header">
+                <div class="title-with-icon">
+                  <i data-lucide="briefcase" class="section-header-icon text-green"></i>
+                  <h2 class="card-title">Recommended Business Ideas</h2>
+                </div>
+                <a href="#ideas" class="card-header-link" id="viewAllIdeasBtn">
+                  <span>View All</span>
+                  <i data-lucide="arrow-right"></i>
+                </a>
+              </div>
+
+              <div class="card-body">
+                <!-- 3 Business Ideas Grid -->
+                <div class="ideas-cards-grid" id="businessIdeasContainer">
+                  
+                  <!-- Business Card 1: Dairy Farming -->
+                  <div class="business-card card-interactive" data-idea-id="dairy" role="button" tabindex="0">
+                    <div class="biz-thumb-wrapper">
+                      <img 
+                        src="https://images.unsplash.com/photo-1546445317-29f4545e9d53?auto=format&fit=crop&w=400&q=80" 
+                        alt="Dairy Farming Milk Production" 
+                        class="biz-thumb-img"
+                        onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'110\' viewBox=\'0 0 200 110\'><rect width=\'200\' height=\'110\' fill=\'%23E8F7EF\'/><text x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' fill=\'%23087F4E\' font-size=\'14\' font-weight=\'bold\' font-family=\'sans-serif\' dy=\'.3em\'>Dairy Farming</text></svg>'"
+                      />
+                      <button class="biz-arrow-badge" aria-label="Open Dairy Farming Details">
+                        <i data-lucide="arrow-right"></i>
+                      </button>
+                    </div>
+                    <div class="biz-info-block">
+                      <h3 class="biz-title">Dairy Farming <span class="biz-sub-title">(Milk Production)</span></h3>
+                      <div class="biz-tags-row">
+                        <span class="badge badge-success">High Demand</span>
+                        <span class="badge badge-soft-blue">Suitable</span>
+                      </div>
+                      <div class="biz-probability-block">
+                        <div class="prob-label-row">
+                          <span class="prob-label">Success Probability</span>
+                          <span class="prob-pct text-green">85%</span>
+                        </div>
+                        <div class="progress-track">
+                          <div class="progress-bar bg-green" style="width: 85%;"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Business Card 2: Vegetable Processing -->
+                  <div class="business-card card-interactive" data-idea-id="veggie" role="button" tabindex="0">
+                    <div class="biz-thumb-wrapper">
+                      <img 
+                        src="https://images.unsplash.com/photo-1589927986089-35812388d1f4?auto=format&fit=crop&w=400&q=80" 
+                        alt="Vegetable Processing Unit" 
+                        class="biz-thumb-img"
+                        onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'110\' viewBox=\'0 0 200 110\'><rect width=\'200\' height=\'110\' fill=\'%23FEF3C7\'/><text x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' fill=\'%23D97706\' font-size=\'14\' font-weight=\'bold\' font-family=\'sans-serif\' dy=\'.3em\'>Veg Processing</text></svg>'"
+                      />
+                      <button class="biz-arrow-badge" aria-label="Open Vegetable Processing Details">
+                        <i data-lucide="arrow-right"></i>
+                      </button>
+                    </div>
+                    <div class="biz-info-block">
+                      <h3 class="biz-title">Vegetable Processing <span class="biz-sub-title">(Unit)</span></h3>
+                      <div class="biz-tags-row">
+                        <span class="badge badge-warning">Medium Investment</span>
+                        <span class="badge badge-soft-blue">Good Return</span>
+                      </div>
+                      <div class="biz-probability-block">
+                        <div class="prob-label-row">
+                          <span class="prob-label">Success Probability</span>
+                          <span class="prob-pct text-green">78%</span>
+                        </div>
+                        <div class="progress-track">
+                          <div class="progress-bar bg-green" style="width: 78%;"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Business Card 3: Rural Retail Store -->
+                  <div class="business-card card-interactive" data-idea-id="retail" role="button" tabindex="0">
+                    <div class="biz-thumb-wrapper">
+                      <img 
+                        src="https://images.unsplash.com/photo-1578916171728-46686eac8d58?auto=format&fit=crop&w=400&q=80" 
+                        alt="Rural Retail Store General Store" 
+                        class="biz-thumb-img"
+                        onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'110\' viewBox=\'0 0 200 110\'><rect width=\'200\' height=\'110\' fill=\'%23E0F2FE\'/><text x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' fill=\'%230284C7\' font-size=\'14\' font-weight=\'bold\' font-family=\'sans-serif\' dy=\'.3em\'>Retail Store</text></svg>'"
+                      />
+                      <button class="biz-arrow-badge" aria-label="Open Rural Retail Store Details">
+                        <i data-lucide="arrow-right"></i>
+                      </button>
+                    </div>
+                    <div class="biz-info-block">
+                      <h3 class="biz-title">Rural Retail Store <span class="biz-sub-title">(General Store)</span></h3>
+                      <div class="biz-tags-row">
+                        <span class="badge badge-success">Low Investment</span>
+                        <span class="badge badge-soft-blue">Stable Demand</span>
+                      </div>
+                      <div class="biz-probability-block">
+                        <div class="prob-label-row">
+                          <span class="prob-label">Success Probability</span>
+                          <span class="prob-pct text-green">72%</span>
+                        </div>
+                        <div class="progress-track">
+                          <div class="progress-bar bg-green" style="width: 72%;"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD E: FINANCIAL SUMMARY (DAIRY FARMING EXAMPLE) -->
+            <div class="card financial-summary-card">
+              <div class="card-header">
+                <div class="title-with-icon">
+                  <i data-lucide="indian-rupee" class="section-header-icon text-green"></i>
+                  <h2 class="card-title">Financial Summary <span class="biz-sub-title">(Dairy Farming Example)</span></h2>
+                </div>
+                <button class="card-header-link" id="viewFinancialDetailsBtn">
+                  <span>View Details</span>
+                  <i data-lucide="arrow-right"></i>
+                </button>
+              </div>
+
+              <div class="card-body">
+                <!-- Top 3 Financial Metric Cards -->
+                <div class="fin-metrics-grid">
+                  
+                  <!-- Metric 1: Project Cost -->
+                  <div class="fin-stat-card">
+                    <div class="fin-stat-header">
+                      <div class="fin-icon-square bg-orange-soft text-orange">
+                        <i data-lucide="file-spreadsheet"></i>
+                      </div>
+                      <span class="fin-stat-label">Project Cost</span>
+                    </div>
+                    <span class="fin-stat-val" id="dispProjectCost">₹ 10,00,000</span>
+                  </div>
+
+                  <!-- Metric 2: Your Margin (10%) with Quick Adjust -->
+                  <div class="fin-stat-card highlight-margin">
+                    <div class="fin-stat-header">
+                      <div class="fin-icon-square bg-sky-soft text-blue">
+                        <i data-lucide="wallet"></i>
+                      </div>
+                      <span class="fin-stat-label">Your Margin (<span id="dispMarginPct">10</span>%)</span>
+                    </div>
+                    <span class="fin-stat-val text-primary" id="dispMarginVal">₹ 1,00,000</span>
+                  </div>
+
+                  <!-- Metric 3: Loan Amount (90%) -->
+                  <div class="fin-stat-card">
+                    <div class="fin-stat-header">
+                      <div class="fin-icon-square bg-blue-soft text-blue">
+                        <i data-lucide="landmark"></i>
+                      </div>
+                      <span class="fin-stat-label">Loan Amount (<span id="dispLoanPct">90</span>%)</span>
+                    </div>
+                    <span class="fin-stat-val" id="dispLoanVal">₹ 9,00,000</span>
+                  </div>
+
+                </div>
+
+                <!-- Interactive Margin Slider & Quick Steppers -->
+                <div class="fin-interactive-controls">
+                  <div class="slider-label-row">
+                    <span class="slider-title"><i data-lucide="sliders-horizontal" class="inline-icon-sm"></i> Adjust Your Equity Margin:</span>
+                    <span class="slider-current-amt" id="sliderCurrentDisplay">₹ 1,00,000</span>
+                  </div>
+                  <div class="slider-wrapper">
+                    <input 
+                      type="range" 
+                      id="marginRangeInput" 
+                      min="20000" 
+                      max="300000" 
+                      step="10000" 
+                      value="100000" 
+                      class="custom-range-slider"
+                      aria-label="Adjust your margin contribution"
+                    />
+                    <div class="slider-bounds">
+                      <span>₹20,000 (Min)</span>
+                      <span>₹3,00,000 (Max)</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Secondary Financial Terms Strip -->
+                <div class="fin-terms-strip">
+                  <div class="term-item">
+                    <span class="term-lbl">Interest Rate</span>
+                    <span class="term-val" id="dispInterestRate">6.5%</span>
+                  </div>
+                  <div class="term-item">
+                    <span class="term-lbl">Tenure</span>
+                    <span class="term-val" id="dispTenure">5 Years</span>
+                  </div>
+                  <div class="term-item">
+                    <span class="term-lbl">Moratorium</span>
+                    <span class="term-val" id="dispMoratorium">6 Months</span>
+                  </div>
+                  <div class="term-item emi-highlight">
+                    <span class="term-lbl">Monthly EMI</span>
+                    <span class="term-val text-primary" id="dispMonthlyEmi">₹ 17,660</span>
+                  </div>
+                </div>
+
+                <!-- Scheme Routing Alert Tag -->
+                <div class="scheme-routing-banner" id="schemeRoutingBanner">
+                  <i data-lucide="check-circle-2" class="banner-icon text-success"></i>
+                  <span class="banner-text">Eligible Category: <strong id="routingSchemeName">Term Loan Scheme (NABARD / PMEGP Supported)</strong></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD F: BUSINESS FEASIBILITY SCORE -->
+            <div class="card feasibility-card">
+              <div class="card-header">
+                <div class="title-with-icon">
+                  <i data-lucide="gauge" class="section-header-icon text-green"></i>
+                  <h2 class="card-title">Business Feasibility Score</h2>
+                </div>
+                <span class="proto-notice-badge" title="Algorithmic model based on regional parameters">Prototype AI Model</span>
+              </div>
+
+              <div class="card-body">
+                <div class="feasibility-layout">
+                  
+                  <!-- Left Gauge Visual -->
+                  <div class="gauge-col">
+                    <div class="radial-gauge-container">
+                      <svg viewBox="0 0 120 120" class="gauge-svg">
+                        <circle cx="60" cy="60" r="48" fill="none" stroke="#E2E8F0" stroke-width="10" stroke-linecap="round"/>
+                        <circle 
+                          id="gaugeProgressCircle"
+                          cx="60" cy="60" r="48" 
+                          fill="none" 
+                          stroke="#087F4E" 
+                          stroke-width="10" 
+                          stroke-linecap="round"
+                          stroke-dasharray="301.59" 
+                          stroke-dashoffset="54.28"
+                          transform="rotate(-90 60 60)"
+                        />
+                      </svg>
+                      <div class="gauge-number-center">
+                        <span class="gauge-score-value">82</span>
+                        <span class="gauge-score-max">/100</span>
+                      </div>
+                    </div>
+                    <span class="gauge-badge-potential">High Potential</span>
+                  </div>
+
+                  <!-- Right Breakdown Progress Bars -->
+                  <div class="breakdown-col">
+                    
+                    <div class="bar-row">
+                      <div class="bar-label-group">
+                        <span class="bar-name">Market Demand</span>
+                        <span class="bar-pct">85%</span>
+                      </div>
+                      <div class="progress-track-sm">
+                        <div class="progress-bar-sm bg-green" style="width: 85%;"></div>
+                      </div>
+                    </div>
+
+                    <div class="bar-row">
+                      <div class="bar-label-group">
+                        <span class="bar-name">Competition</span>
+                        <span class="bar-pct">70%</span>
+                      </div>
+                      <div class="progress-track-sm">
+                        <div class="progress-bar-sm bg-green" style="width: 70%;"></div>
+                      </div>
+                    </div>
+
+                    <div class="bar-row">
+                      <div class="bar-label-group">
+                        <span class="bar-name">Capital Suitability</span>
+                        <span class="bar-pct">90%</span>
+                      </div>
+                      <div class="progress-track-sm">
+                        <div class="progress-bar-sm bg-green" style="width: 90%;"></div>
+                      </div>
+                    </div>
+
+                    <div class="bar-row">
+                      <div class="bar-label-group">
+                        <span class="bar-name">Profitability</span>
+                        <span class="bar-pct">80%</span>
+                      </div>
+                      <div class="progress-track-sm">
+                        <div class="progress-bar-sm bg-green" style="width: 80%;"></div>
+                      </div>
+                    </div>
+
+                    <div class="bar-row">
+                      <div class="bar-label-group">
+                        <span class="bar-name">Risk Level</span>
+                        <span class="bar-pct text-muted">30%</span>
+                      </div>
+                      <div class="progress-track-sm">
+                        <div class="progress-bar-sm bg-green" style="width: 30%;"></div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div><!-- END RIGHT SUB-COLUMN -->
+
+        </div><!-- END DUAL-COLUMN SUBGRID -->
+
+      </div><!-- END SCROLLABLE CONTAINER -->
+    </main>
+
+    <!-- ========================================== -->
+    <!-- 3. RIGHT AI ADVISOR & SCHEMES SIDEBAR      -->
+    <!-- ========================================== -->
+    <aside class="right-sidebar" id="rightSidebar">
+      
+      <!-- AI BUSINESS ADVISOR CARD -->
+      <div class="card ai-advisor-card">
+        <div class="card-header ai-advisor-header">
+          <div class="ai-header-title">
+            <div class="ai-icon-circle">
+              <i data-lucide="sparkles"></i>
+            </div>
+            <h2 class="card-title">AI Business Advisor</h2>
+          </div>
+          <div class="online-indicator">
+            <span class="online-dot"></span>
+            <span class="online-text">Online</span>
+          </div>
+        </div>
+
+        <div class="card-body ai-advisor-body">
+          <!-- Chat Messages Scroll Area -->
+          <div class="ai-chat-thread" id="aiChatThread">
+            
+            <!-- Welcome message from AI -->
+            <div class="chat-msg ai-msg">
+              <div class="msg-avatar-ai">
+                <i data-lucide="bot"></i>
+              </div>
+              <div class="msg-bubble">
+                <p class="greeting-lead">Hi Ramesh ji! 🙏</p>
+                <p>I am your <strong>AI Business Advisor</strong>.</p>
+                <p>Ask me anything about business ideas, local market demand in Sadar Varanasi, financing options, or government subsidy schemes.</p>
+              </div>
+            </div>
+
+            <!-- Typing indicator (hidden by default) -->
+            <div class="typing-indicator" id="aiTypingIndicator" style="display: none;">
+              <div class="typing-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="typing-caption">Analyzing local market data...</span>
+            </div>
+
+          </div>
+
+          <!-- Suggested Clickable Prompt Chips -->
+          <div class="suggested-prompts-container" id="suggestedPrompts">
+            <span class="suggested-title">Suggested questions:</span>
+            <div class="prompt-chips-list">
+              <button class="prompt-chip-btn" data-question="Which business is best in my area?">
+                <span>Which business is best in my area?</span>
+              </button>
+              <button class="prompt-chip-btn" data-question="How much loan can I get?">
+                <span>How much loan can I get?</span>
+              </button>
+              <button class="prompt-chip-btn" data-question="Show me schemes for dairy farming">
+                <span>Show me schemes for dairy farming</span>
+              </button>
+              <button class="prompt-chip-btn" data-question="What is the market demand for vegetables?">
+                <span>What is the market demand for vegetables?</span>
+              </button>
+              <button class="prompt-chip-btn" data-question="Give me a detailed business plan">
+                <span>Give me a detailed business plan</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Chat Input Bar -->
+          <form class="chat-input-bar" id="aiChatForm" onsubmit="return false;">
+            <input 
+              type="text" 
+              id="aiChatInput" 
+              class="chat-text-input" 
+              placeholder="Type your question..." 
+              autocomplete="off"
+              aria-label="Ask AI Business Advisor a question"
+            />
+            <button type="submit" class="btn-send-ai" id="aiSendBtn" aria-label="Send question">
+              <i data-lucide="send"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- GOVERNMENT SCHEMES CARD -->
+      <div class="card schemes-section-card">
+        <div class="card-header">
+          <div class="title-with-icon">
+            <i data-lucide="landmark" class="section-header-icon text-green"></i>
+            <h2 class="card-title">Government Schemes</h2>
+          </div>
+          <a href="#schemes" class="card-header-link" id="viewAllSchemesBtn">
+            <span>View All</span>
+            <i data-lucide="arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="card-body">
+          <div class="schemes-list" id="schemesList">
+            
+            <!-- Scheme 1: PMEGP -->
+            <div class="scheme-item card-interactive" data-scheme-id="pmegp" role="button" tabindex="0">
+              <div class="scheme-icon-box bg-gold-soft text-gold">
+                <i data-lucide="shield-check"></i>
+              </div>
+              <div class="scheme-details">
+                <div class="scheme-title-row">
+                  <h3 class="scheme-name">PMEGP</h3>
+                  <span class="badge-scheme-gov">Central</span>
+                </div>
+                <p class="scheme-full-title">Prime Minister's Employment...</p>
+                <div class="scheme-benefit-row">
+                  <span class="benefit-tag">Loan up to ₹25,00,000</span>
+                  <span class="benefit-sub">Interest Subsidy</span>
+                </div>
+              </div>
+              <i data-lucide="chevron-right" class="scheme-arrow"></i>
+            </div>
+
+            <!-- Scheme 2: NABARD Dairy -->
+            <div class="scheme-item card-interactive" data-scheme-id="nabard" role="button" tabindex="0">
+              <div class="scheme-icon-box bg-green-soft text-green">
+                <i data-lucide="sprout"></i>
+              </div>
+              <div class="scheme-details">
+                <div class="scheme-title-row">
+                  <h3 class="scheme-name">NABARD Dairy</h3>
+                  <span class="badge-scheme-gov">Central</span>
+                </div>
+                <p class="scheme-full-title">Dairy Entrepreneurship...</p>
+                <div class="scheme-benefit-row">
+                  <span class="benefit-tag">Loan up to ₹10,00,000</span>
+                  <span class="benefit-sub">Concessional Interest</span>
+                </div>
+              </div>
+              <i data-lucide="chevron-right" class="scheme-arrow"></i>
+            </div>
+
+            <!-- Scheme 3: PMFME -->
+            <div class="scheme-item card-interactive" data-scheme-id="pmfme" role="button" tabindex="0">
+              <div class="scheme-icon-box bg-orange-soft text-orange">
+                <i data-lucide="apple"></i>
+              </div>
+              <div class="scheme-details">
+                <div class="scheme-title-row">
+                  <h3 class="scheme-name">PMFME</h3>
+                  <span class="badge-scheme-gov">Central</span>
+                </div>
+                <p class="scheme-full-title">Food Processing Units</p>
+                <div class="scheme-benefit-row">
+                  <span class="benefit-tag">Up to 35% Subsidy</span>
+                  <span class="benefit-sub">For Food Processing Units</span>
+                </div>
+              </div>
+              <i data-lucide="chevron-right" class="scheme-arrow"></i>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- NEXT STEPS CARD -->
+      <div class="card next-steps-card">
+        <div class="card-header">
+          <div class="title-with-icon">
+            <i data-lucide="check-circle" class="section-header-icon text-green"></i>
+            <h2 class="card-title">Next Steps</h2>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <ol class="next-steps-list">
+            <li class="step-item" data-step="1" role="button" tabindex="0">
+              <span class="step-number">1</span>
+              <span class="step-text">Complete detailed business assessment</span>
+              <i data-lucide="arrow-right" class="step-arrow"></i>
+            </li>
+            <li class="step-item" data-step="2" role="button" tabindex="0">
+              <span class="step-number">2</span>
+              <span class="step-text">Check eligible schemes and compare</span>
+              <i data-lucide="arrow-right" class="step-arrow"></i>
+            </li>
+            <li class="step-item" data-step="3" role="button" tabindex="0">
+              <span class="step-number">3</span>
+              <span class="step-text">Generate full financial plan</span>
+              <i data-lucide="arrow-right" class="step-arrow"></i>
+            </li>
+            <li class="step-item" data-step="4" role="button" tabindex="0">
+              <span class="step-number">4</span>
+              <span class="step-text">Download feasibility report (PDF)</span>
+              <i data-lucide="arrow-right" class="step-arrow"></i>
+            </li>
+            <li class="step-item" data-step="5" role="button" tabindex="0">
+              <span class="step-number">5</span>
+              <span class="step-text">Apply for scheme with support documents</span>
+              <i data-lucide="arrow-right" class="step-arrow"></i>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+    </aside>
+
+  </div><!-- END APP-LAYOUT -->
+
+  <!-- ========================================== -->
+  <!-- MODALS & POPUPS                            -->
+  <!-- ========================================== -->
+
+  <!-- 1. BUSINESS FEASIBILITY REPORT MODAL -->
+  <div class="modal-backdrop" id="reportModal" role="dialog" aria-modal="true" aria-labelledby="reportModalTitle">
+    <div class="modal-container report-modal-container">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <div class="logo-mark-wrap-sm">
+            <span class="brand-udyam">UdyamSetu</span><span class="brand-ai">AI</span>
+            <span class="badge badge-success ml-2">Official Assessment</span>
+          </div>
+          <h2 class="modal-main-title" id="reportModalTitle">Business Feasibility &amp; Financing Report</h2>
+        </div>
+        <button class="modal-close-btn" id="closeReportModal" aria-label="Close report modal">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+
+      <div class="modal-body report-document-body" id="printableReport">
+        <!-- Print Header -->
+        <div class="report-meta-header">
+          <div class="meta-row">
+            <div>
+              <span class="meta-lbl">Beneficiary Entrepreneur:</span>
+              <strong class="meta-val">Ramesh Yadav</strong>
+            </div>
+            <div>
+              <span class="meta-lbl">Location / Block:</span>
+              <strong class="meta-val" id="reportLocationVal">Sadar, Varanasi, Uttar Pradesh</strong>
+            </div>
+            <div>
+              <span class="meta-lbl">Target Venture:</span>
+              <strong class="meta-val" id="reportBusinessVal">Dairy Farming (10 Indigenous HF Cross Breed Cows)</strong>
+            </div>
+            <div>
+              <span class="meta-lbl">Assessment Date:</span>
+              <strong class="meta-val" id="reportDateVal">September 27, 2026</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Executive Financial Snapshot -->
+        <div class="report-section">
+          <h3 class="report-section-title"><i data-lucide="calculator"></i> Financial Structuring &amp; Lending Blueprint</h3>
+          <div class="report-stats-grid">
+            <div class="rep-stat-box">
+              <span class="rep-stat-lbl">Estimated Project Cost</span>
+              <strong class="rep-stat-amt" id="repStatCost">₹ 10,00,000</strong>
+            </div>
+            <div class="rep-stat-box">
+              <span class="rep-stat-lbl">Beneficiary Margin (10%)</span>
+              <strong class="rep-stat-amt text-primary" id="repStatMargin">₹ 1,00,000</strong>
+            </div>
+            <div class="rep-stat-box">
+              <span class="rep-stat-lbl">Recommended Loan (90%)</span>
+              <strong class="rep-stat-amt text-blue" id="repStatLoan">₹ 9,00,000</strong>
+            </div>
+            <div class="rep-stat-box">
+              <span class="rep-stat-lbl">Projected Monthly EMI</span>
+              <strong class="rep-stat-amt text-green" id="repStatEmi">₹ 17,660</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Market & Regional Dynamics -->
+        <div class="report-section">
+          <h3 class="report-section-title"><i data-lucide="trending-up"></i> Hyper-Local Market Assessment (Sadar Varanasi Cluster)</h3>
+          <div class="report-info-grid">
+            <div class="info-cell">
+              <strong>Local Demand:</strong> High (Daily milk demand deficit of ~1,400 litres across Sadar sweet shops &amp; urban Varanasi retail).
+            </div>
+            <div class="info-cell">
+              <strong>Competitive Pressure:</strong> Low organized dairy chilling setups within 5 km; fragmented unorganized milkmen.
+            </div>
+            <div class="info-cell">
+              <strong>Supply Chain:</strong> Direct pickup agreement available with regional milk cooperative and local processing centers.
+            </div>
+            <div class="info-cell">
+              <strong>Gross Profit Margin:</strong> 32% - 38% after feed, veterinary services, and operational overheads.
+            </div>
+          </div>
+        </div>
+
+        <!-- SWOT Matrix -->
+        <div class="report-section">
+          <h3 class="report-section-title"><i data-lucide="grid"></i> Strategic SWOT Analysis</h3>
+          <div class="swot-grid">
+            <div class="swot-card swot-s">
+              <h4>Strengths</h4>
+              <ul>
+                <li>Owned agricultural land with perennial green fodder source</li>
+                <li>Proximity to high-consumption Varanasi retail market</li>
+                <li>Pre-existing family experience in animal husbandry</li>
+              </ul>
+            </div>
+            <div class="swot-card swot-w">
+              <h4>Weaknesses</h4>
+              <ul>
+                <li>Initial cold storage/chilling equipment dependency</li>
+                <li>Working capital buffer needed for dry-period fodder</li>
+              </ul>
+            </div>
+            <div class="swot-card swot-o">
+              <h4>Opportunities</h4>
+              <ul>
+                <li>25% - 35% capital subsidy via PMEGP / NABARD DEDS</li>
+                <li>Value-addition into Paneer, Ghee, and organic curd</li>
+              </ul>
+            </div>
+            <div class="swot-card swot-t">
+              <h4>Mitigated Risks</h4>
+              <ul>
+                <li>Cattle insurance coverage under government animal health program</li>
+                <li>Vaccination calendar coordinated with Sadar veterinary officer</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Government Scheme Roadmap -->
+        <div class="report-section">
+          <h3 class="report-section-title"><i data-lucide="landmark"></i> Recommended Financing Pipeline</h3>
+          <div class="scheme-routing-box">
+            <p><strong>Primary Recommended Scheme:</strong> <span id="reportRecommendedScheme">Term Loan Scheme (PMEGP / NABARD DEDS)</span></p>
+            <p class="text-muted mt-1">Concessional bank interest rate @ 6.5% - 8.0% p.a. with 6-month moratorium during cattle shed erection and initial lactation cycle.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="closeReportModalBtn">Close</button>
+        <button class="btn btn-primary" id="downloadReportPdfBtn">
+          <i data-lucide="download"></i>
+          <span>Download Report (PDF)</span>
+        </button>
+        <button class="btn btn-outline-primary" id="printReportBtn">
+          <i data-lucide="printer"></i>
+          <span>Print Blueprint</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. EDIT LOCATION MODAL -->
+  <div class="modal-backdrop" id="locationModal" role="dialog" aria-modal="true" aria-labelledby="locModalTitle">
+    <div class="modal-container location-modal-container">
+      <div class="modal-header">
+        <div class="title-with-icon">
+          <i data-lucide="map-pin" class="text-green"></i>
+          <h2 class="modal-main-title" id="locModalTitle">Select Your District &amp; Block</h2>
+        </div>
+        <button class="modal-close-btn" id="closeLocationModal" aria-label="Close location modal">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-desc">UdyamSetu AI personalizes demand, competitor density, and loan schemes based on your hyper-local village block.</p>
+        <form id="locationChangeForm" class="loc-form">
+          <div class="form-group">
+            <label for="stateSelect" class="form-label">State</label>
+            <select id="stateSelect" class="form-control">
+              <option value="UP" selected>Uttar Pradesh</option>
+              <option value="BIH">Bihar</option>
+              <option value="MP">Madhya Pradesh</option>
+              <option value="RAJ">Rajasthan</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="districtSelect" class="form-label">District</label>
+            <select id="districtSelect" class="form-control">
+              <option value="Varanasi" selected>Varanasi</option>
+              <option value="Mirzapur">Mirzapur</option>
+              <option value="Ghazipur">Ghazipur</option>
+              <option value="Chandauli">Chandauli</option>
+              <option value="Jaunpur">Jaunpur</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="blockSelect" class="form-label">Block / Tehsil</label>
+            <select id="blockSelect" class="form-control">
+              <option value="Sadar" selected>Sadar</option>
+              <option value="Cholapur">Cholapur</option>
+              <option value="Harahua">Harahua</option>
+              <option value="Pindra">Pindra</option>
+              <option value="Kashi Vidyapeeth">Kashi Vidyapeeth</option>
+              <option value="Arajiline">Arajiline</option>
+            </select>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="cancelLocationModalBtn">Cancel</button>
+        <button class="btn btn-primary" id="saveLocationBtn">Save &amp; Refresh Market Data</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. BUSINESS IDEA DETAILS MODAL -->
+  <div class="modal-backdrop" id="ideaDetailModal" role="dialog" aria-modal="true" aria-labelledby="ideaModalTitle">
+    <div class="modal-container idea-modal-container">
+      <div class="modal-header">
+        <div class="title-with-icon">
+          <i data-lucide="lightbulb" class="text-orange"></i>
+          <h2 class="modal-main-title" id="ideaModalTitle">Business Idea Profile</h2>
+        </div>
+        <button class="modal-close-btn" id="closeIdeaModal" aria-label="Close modal">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      <div class="modal-body" id="ideaModalContent">
+        <!-- Injected dynamically by JS -->
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="closeIdeaModalBtn">Back to Dashboard</button>
+        <button class="btn btn-primary" id="selectIdeaForCalcBtn">Calculate Financing for this Idea</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Application Script -->
+  <script src="js/app.js"></script>
+</body>
+</html>
